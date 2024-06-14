@@ -1,4 +1,6 @@
 <x-guest-layout>
+    <!-- Include Custom CSS -->
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
@@ -44,4 +46,6 @@
             </x-primary-button>
         </div>
     </form>
+    <!-- Include Custom JS -->
+    <script src="{{ asset('js/custom.js') }}"></script>
 </x-guest-layout>

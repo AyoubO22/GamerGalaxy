@@ -1,4 +1,6 @@
 <x-guest-layout>
+     <!-- Include Custom CSS -->
+     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -49,4 +51,6 @@
             </x-primary-button>
         </div>
     </form>
+    <!-- Include Custom JS -->
+    <script src="{{ asset('js/custom.js') }}"></script>
 </x-guest-layout>
