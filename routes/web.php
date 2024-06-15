@@ -22,7 +22,7 @@ require __DIR__.'/auth.php';
 //voor home.blade
 use App\Http\Controllers\HomeController;
 
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index']);
 Route::get('/gamelist', [HomeController::class, 'gamelist']);
 Route::get('/support', [HomeController::class, 'support']);
 Route::get('/profile', [HomeController::class, 'profile']);
